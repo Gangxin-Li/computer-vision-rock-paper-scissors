@@ -21,6 +21,7 @@ def get_prediction():
     print('the result is:',prediction)
     end = time.time()
     print('Single round cost:' ,end-start,'s')
+    cv2.imshow('frame', frame)
     return prediction
 
 def get_computer_choice():
@@ -45,8 +46,10 @@ for i in range(6):
     user = np.argmax(user)
     choices = ['Rock', 'Paper', 'Scissors']
     user = choices[user]
+    print(user)
     computer = get_computer_choice()
     winner = get_winner(computer,user)
+    
     if winner == -1:
         computer_wins+=1
     elif winner == 1:
@@ -60,4 +63,5 @@ for i in range(6):
     rounds_played +=1
     if rounds_played==5:
         print("End the game")
+        break
 
