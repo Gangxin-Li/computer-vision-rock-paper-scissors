@@ -14,3 +14,7 @@ def get_winner(computer_choice, user_choice):
         print("You won!")
     else:
         print("It is a tie!")
+def play():
+    computer = get_computer_choice()
+    user= get_user_choice()
+    get_winner(computer,user)
