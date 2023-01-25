@@ -38,9 +38,9 @@ def get_winner(computer_choice, user_choice):
 
 computer_wins=0
 user_wins=0
-rounds_played=5
+rounds_played=0
 
-for i in range(rounds_played):
+for i in range(6):
     user = get_prediction()
     user = np.argmax(user)
     choices = ['Rock', 'Paper', 'Scissors']
@@ -57,4 +57,7 @@ for i in range(rounds_played):
         print("User wins")
     if computer == 3:
         print("Computer wins")
+    rounds_played +=1
+    if rounds_played==5:
+        print("End the game")
 
