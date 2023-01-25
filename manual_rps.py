@@ -5,9 +5,9 @@ def get_computer_choice():
 def get_user_choice():
     choice = input("give your choice:")
     return choice
-def get_winner():
-    computer = get_computer_choice()
-    user = get_computer_choice()
+def get_winner(computer_choice, user_choice):
+    computer=computer_choice
+    user = user_choice
     if computer == 'Rock' and user == 'Scissors' or computer =='paper' and user=='Rock' or computer=='Scissors' and user=='Paper':
         print("You lost")
     elif user == 'Rock' and computer == 'Scissors' or user =='paper' and computer=='Rock' or user=='Scissors' and computer=='Paper':
