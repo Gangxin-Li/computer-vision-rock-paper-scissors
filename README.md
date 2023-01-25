@@ -43,6 +43,6 @@
 - Maybe write a conclusion to the project, what you understood about it and also how you would improve it or take it further.
 
 - Read through your documentation, do you understand everything you've written? Is everything clear and cohesive?
+![Pic1](./Pic1.png)
 
 
-Screenshot 2023-01-25 at 23.40.43.png
